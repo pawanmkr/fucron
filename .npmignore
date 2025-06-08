@@ -1,0 +1,19 @@
+# code-editor
+.idea
+.vscode
+
+.DS_Store 
+
+/node_modules
+/src
+/__tests__
+
+tsconfig.json
+tsconfig.build.json
+tsup.config.ts
+
+.env
+.eslintignore
+.eslintrc.yml
+
+index.js

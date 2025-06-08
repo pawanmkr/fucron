@@ -1,0 +1,52 @@
+{
+    "name": "@pawanmkr/fucron",
+    "version": "0.0.1",
+    "type": "module",
+    "main": "./dist/index.js",
+    "module": "dist/index.mjs",
+    "types": "./dist/index.d.ts",
+    "exports": {
+        ".": {
+            "import": "./dist/index.mjs",
+            "require": "./dist/index.cjs"
+        }
+    },
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "tsup src --clean --format cjs,esm --minify --outDir dist --dts",
+        "test": "jest --verbose",
+        "prepublishOnly": "npm run build"
+    },
+    "devDependencies": {
+        "typescript": "^5.x"
+    },
+    "dependencies": {
+        "tsup": "^8.5.0"
+    },
+    "keywords": [
+        "scheduler",
+        "timeout",
+        "task",
+        "job",
+        "delay",
+        "timer",
+        "async",
+        "event",
+        "executor",
+        "timeout-manager",
+        "in-memory",
+        "runtime",
+        "ephemeral",
+        "auto-expire",
+        "no-cron",
+        "no-polling",
+        "lightweight"
+    ],
+    "repository": {
+        "url": "https://github.com/pawanmkr"
+    },
+    "author": "Pawan Kumar",
+    "license": "ISC"
+}
